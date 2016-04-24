@@ -1,0 +1,16 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+<hibernate-mapping>
+	<class name="com.stack.rs.Users" table="Users" >
+		<id name="UserName" type="string">
+			<column name="username" length="100" />
+		</id>
+		<property name="Emailid" type="string">
+			<column name="emailid" length="100" />
+		</property>
+		<property name="Password" type="string">
+			<column name="password" length="100" />
+		</property>
+	</class>
+</hibernate-mapping>

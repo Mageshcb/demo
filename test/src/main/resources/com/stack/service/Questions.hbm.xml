@@ -1,0 +1,23 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+<hibernate-mapping>
+	<class name="com.stack.rs.Questions" table="Questions" >
+		<id name="id" type="int">
+			<column name="qid" />
+			<generator class="native" />
+		</id>
+		<property name="questions" type="string">
+			<column name="questions" length="100" />
+		</property>
+		<property name="noans" type="int">
+			<column name="noans" length="100" />
+		</property>
+		<property name="username" type="string">
+			<column name="username" length="100" />
+		</property>
+		<property name="timeval" type="timestamp">
+			<column name="timevalue" length="29" />
+		</property>
+	</class>
+</hibernate-mapping>
